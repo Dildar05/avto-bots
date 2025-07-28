@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ремонт ноутбуков и компьютеров в Астане и Алматы | AvtoBots</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Sticky Navigation -->
+    <header class="sticky-header">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="logo.png"
+            alt="AvtoBots Logo"
+            class="logo-img"
+            style="
+              max-width: 120px;
+              height: 50px;
+              object-fit: contain;
+              background-color: white;
+              border-radius: 10px;
+              padding: 5px;
+            "
+          />
+          <span class="logo-text">AvtoBots</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#prices">Цены</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Ремонт ноутбуков и компьютеров в Астане и Алматы</h1>
+          <p>С гарантией, оригинальными запчастями и бесплатной диагностикой</p>
+          <div class="hero-buttons">
+            <a href="#form" class="btn primary-btn">🔧 Записаться на ремонт</a>
+            <a href="tel:+77477502607" class="btn secondary-btn">☎️ Позвонить в Астану</a>
+            <a href="tel:+77477502607" class="btn secondary-btn">☎️ Позвонить в Алматы</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://avatars.mds.yandex.net/i?id=424ebb549b60568352b059b99bc8b34d_l-9875416-images-thumbs&n=13"
+            alt="Мастер за работой"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Key Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Наши ключевые услуги</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Ремонт ноутбуков</h3>
+            <p>Замена экранов, клавиатур, зарядных портов, материнских плат</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🖥</div>
+            <h3>Ремонт ПК</h3>
+            <p>Диагностика, апгрейд, чистка, настройка BIOS</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌡</div>
+            <h3>Чистка от пыли</h3>
+            <p>Полный разбор, замена термопасты, чистка кулеров</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💽</div>
+            <h3>Восстановление данных</h3>
+            <p>С HDD, SSD, USB, сбойных или повреждённых носителей</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🪟</div>
+            <h3>Установка Windows и Linux</h3>
+            <p>Полная настройка + драйвера + антивирус</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Апгрейд системы</h3>
+            <p>Установка SSD, добавление RAM, смена комплектующих</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. What We Repair Section -->
+    <section id="repair-targets" class="repair-targets-section">
+      <div class="container">
+        <h2 class="section-title">Что именно мы ремонтируем</h2>
+        <div class="targets-grid">
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-laptop"></i></div>
+            <p>Ноутбуки всех брендов</p>
+          </div>
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-desktop"></i></div>
+            <p>Стационарные компьютеры</p>
+          </div>
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-tv"></i></div>
+            <p>Моноблоки</p>
+          </div>
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-plug"></i></div>
+            <p>Блоки питания</p>
+          </div>
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-hdd"></i></div>
+            <p>Жёсткие диски и накопители</p>
+          </div>
+          <div class="target-item">
+            <div class="target-icon"><i class="fas fa-microchip"></i></div>
+            <p>Материнские платы</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Repair Process Section -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <h2 class="section-title">Как проходит ремонт</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-icon">📋</div>
+            <h3>Приём техники и диагностика</h3>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-icon">🔍</div>
+            <h3>Подтверждение стоимости</h3>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-icon">🔧</div>
+            <h3>Ремонт в чистой зоне</h3>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-icon">✅</div>
+            <h3>Проверка и выдача с гарантией</h3>
+          </div>
+        </div>
+        <p class="process-time">🕒 Диагностика в среднем — от 30 минут до 1 дня. Уведомления по WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- 5. Locations Section -->
+    <section id="locations" class="locations-section">
+      <div class="container">
+        <h2 class="section-title">Наши филиалы</h2>
+        <div class="tabs">
+          <button class="tab-btn active" onclick="showTab(0)">Астана</button>
+          <button class="tab-btn" onclick="showTab(1)">Алматы</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <div class="location-info">
+              <div class="location-details">
+                <h3>Филиал в Астане</h3>
+                <p><strong>Адрес:</strong> ул. Ташенова 4, кв/офис 47</p>
+                <p><strong>Телефон:</strong> +7(747) 750 26 07</p>
+                <p><strong>Время работы:</strong> 10:00 - 18:00 (Пн-Вс)</p>
+              </div>
+              <div class="location-map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A432eef706939b0fe8b877ab12fcd38a172853cf519ecc0dd38dab5ea1ff02777&amp;source=constructor"
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="location-info">
+              <div class="location-details">
+                <h3>Филиал в Алматы</h3>
+                <p><strong>Адрес:</strong> ул. Варламова 1/3, офис 5</p>
+                <p><strong>Телефон:</strong> +7(747) 750 26 07</p>
+                <p><strong>Время работы:</strong> 10:00 - 18:00 (Пн-Вс)</p>
+              </div>
+              <div class="location-map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f55cd065e641d69b54cbc611ad92977920775894636566bbdd0a094d6c42827&amp;source=constructor"
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Why Choose Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-icon">⏱️</div>
+            <h3>10+ лет опыта</h3>
+            <p>Специалисты с инженерной квалификацией</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">🏙️</div>
+            <h3>2 филиала</h3>
+            <p>В Астане и Алматы, всегда рядом</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">💎</div>
+            <h3>Оригинальные запчасти</h3>
+            <p>Работаем напрямую с поставщиками</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">⚡</div>
+            <h3>Быстрые сроки</h3>
+            <p>Ремонт от 30 минут</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">📱</div>
+            <h3>Онлайн-статус</h3>
+            <p>Сообщаем о ходе ремонта по WhatsApp</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">🔒</div>
+            <h3>Гарантия 6 мес</h3>
+            <p>Официальная гарантия на ремонт и детали</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Pricing Section -->
+    <section id="prices" class="prices-section">
+      <div class="container">
+        <h2 class="section-title">Цены на услуги</h2>
+        <div class="price-table">
+          <div class="price-row header">
+            <div class="price-cell">Услуга</div>
+            <div class="price-cell">Описание</div>
+            <div class="price-cell">Цена</div>
+          </div>
+          <div class="price-row">
+            <div class="price-cell">Диагностика</div>
+            <div class="price-cell">Бесплатно при ремонте</div>
+            <div class="price-cell">0 ₸</div>
+          </div>
+          <div class="price-row">
+            <div class="price-cell">Замена экрана</div>
+            <div class="price-cell">Матрица + работа</div>
+            <div class="price-cell">от 15 000 ₸</div>
+          </div>
+          <div class="price-row">
+            <div class="price-cell">Чистка и термопаста</div>
+            <div class="price-cell">Разбор, чистка, сборка</div>
+            <div class="price-cell">от 8 000 ₸</div>
+          </div>
+          <div class="price-row">
+            <div class="price-cell">Установка Windows</div>
+            <div class="price-cell">С драйверами</div>
+            <div class="price-cell">от 5 000 ₸</div>
+          </div>
+          <div class="price-row">
+            <div class="price-cell">Замена клавиатуры</div>
+            <div class="price-cell">Полный разбор</div>
+            <div class="price-cell">от 10 000 ₸</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Reviews Section -->
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="reviews-slider">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">«Принёс ноут — на следующий день всё готово. Респект ребятам!»</p>
+            <p class="review-author">— Айдос, Астана</p>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">«Спасли мои данные с битого диска. Спасибо!»</p>
+            <p class="review-author">— Зарина, Алматы</p>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">«Оперативно заменили экран и клавиатуру. Как новый ноутбук стал!»</p>
+            <p class="review-author">— Данияр, Астана</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. B2B Section -->
+    <section id="b2b" class="b2b-section">
+      <div class="container">
+        <div class="b2b-content">
+          <div class="b2b-text">
+            <h2 class="section-title">B2B и автоматизация</h2>
+            <p>Мы не только чиним технику, но и помогаем автоматизировать IT-инфраструктуру:</p>
+            <ul>
+              <li>Внедрение CRM</li>
+              <li>Интеграция мессенджеров</li>
+              <li>Чат-боты для поддержки</li>
+              <li>Ведение клиентов и заявок</li>
+            </ul>
+            <p class="b2b-highlight">⚙️ Для сервисов, магазинов и IT-команд</p>
+          </div>
+          <div class="b2b-logos">
+            <div class="b2b-logo-item">
+              <div class="b2b-icon bitrix-icon">
+                <i class="fas fa-cubes"></i>
+              </div>
+              <span>Bitrix24</span>
+            </div>
+            <div class="b2b-logo-item">
+              <div class="b2b-icon wazzup-icon">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <span>WazzupCRM</span>
+            </div>
+            <div class="b2b-logo-item">
+              <div class="b2b-icon crm-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <span>CRM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Contact Form Section -->
+    <section id="form" class="form-section">
+      <div class="container">
+        <h2 class="section-title">Оставить заявку</h2>
+
+        <!-- Сообщение об успешной отправке (изначально скрыто) -->
+        <div id="success-message" class="success-message" style="display: none">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Заявка успешно отправлена!</h3>
+          <p>Наш специалист свяжется с вами в ближайшее время.</p>
+          <button class="btn primary-btn" onclick="hideSuccessMessage()">Отправить еще одну заявку</button>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="city">Город</label>
+            <select id="city" name="city" required>
+              <option value="">Выберите город</option>
+              <option value="astana">Астана</option>
+              <option value="almaty">Алматы</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите услугу</option>
+              <option value="laptop">Ремонт ноутбука</option>
+              <option value="pc">Ремонт ПК</option>
+              <option value="cleaning">Чистка от пыли</option>
+              <option value="data">Восстановление данных</option>
+              <option value="windows">Установка Windows</option>
+              <option value="upgrade">Апгрейд системы</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 12. FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">Сколько длится ремонт?</div>
+            <div class="faq-answer">
+              В зависимости от сложности, ремонт может занять от 30 минут до нескольких дней. Большинство стандартных
+              работ выполняется в течение 1-2 часов или в тот же день.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Что входит в бесплатную диагностику?</div>
+            <div class="faq-answer">
+              Бесплатная диагностика включает проверку работоспособности устройства, выявление неисправностей и
+              предоставление рекомендаций по ремонту. При согласии на ремонт стоимость диагностики не взимается.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Вы используете оригинальные запчасти?</div>
+            <div class="faq-answer">
+              Да, мы используем только оригинальные запчасти или высококачественные аналоги от проверенных поставщиков.
+              На все детали предоставляется гарантия.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Можно ли принести MacBook?</div>
+            <div class="faq-answer">
+              Да, мы ремонтируем технику Apple, включая MacBook, iMac и Mac Pro. Наши мастера имеют опыт работы с
+              продукцией Apple и используют специализированное оборудование.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Есть ли гарантия?</div>
+            <div class="faq-answer">
+              Да, мы предоставляем гарантию 6 месяцев на все виды работ и заменённые комплектующие. Если возникнут
+              проблемы, ремонт будет выполнен бесплатно.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Footer Section -->
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img
+                src="logo.png"
+                alt="AvtoBots Logo"
+                class="footer-logo-img"
+                style="
+                  max-width: 150px;
+                  height: 60px;
+                  object-fit: contain;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 5px;
+                "
+              />
+              <span class="footer-logo-text">AvtoBots</span>
+            </div>
+            <div class="footer-contacts">
+              <div class="contact-block">
+                <h4>Астана</h4>
+                <p>ул. Ташенова 4, кв/офис 47</p>
+                <p>+7(747) 750 26 07</p>
+                <p>10:00 - 18:00 (Пн-Вс)</p>
+              </div>
+              <div class="contact-block">
+                <h4>Алматы</h4>
+                <p>ул. Варламова 1/3, офис 5</p>
+                <p>+7(747) 750 26 07</p>
+                <p>10:00 - 18:00 (Пн-Вс)</p>
+              </div>
+            </div>
+            <div class="footer-email">
+              <p>Email: avtobots-svc@mail.ru</p>
+            </div>
+          </div>
+          <div class="footer-social">
+            <h4>Мы в соцсетях</h4>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>© 2023 AvtoBots. Все права защищены.</p>
+          </div>
+          <div class="company-info">
+            <p>ТОО "AvtoBots" | БИН: 123456789012</p>
+          </div>
+          <div class="back-to-top">
+            <a href="#hero">Наверх ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Sticky Header
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('.sticky-header');
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      });
+
+      // Mobile Menu
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('nav');
+
+      mobileMenuBtn.addEventListener('click', function () {
+        nav.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+      });
+
+      // Tabs
+      function showTab(index) {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach((btn) => btn.classList.remove('active'));
+        tabPanes.forEach((pane) => pane.classList.remove('active'));
+
+        tabBtns[index].classList.add('active');
+        tabPanes[index].classList.add('active');
+      }
+
+      // FAQ Accordion
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener('click', function () {
+          const item = this.parentNode;
+          item.classList.toggle('active');
+        });
+      });
+
+      // Form submission handler
+      const contactForm = document.getElementById('contact-form');
+      const successMessage = document.getElementById('success-message');
+
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent actual form submission
+
+        // Simulate loading (optional, for more realism)
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        submitButton.innerHTML = 'Отправка...';
+        submitButton.disabled = true;
+
+        // Simulate server delay
+        setTimeout(function () {
+          // Hide form and show success message
+          contactForm.style.display = 'none';
+          successMessage.style.display = 'block';
+
+          // Reset form for future submissions
+          contactForm.reset();
+          submitButton.innerHTML = 'Отправить заявку';
+          submitButton.disabled = false;
+
+          // Scroll to success message
+          successMessage.scrollIntoView({ behavior: 'smooth' });
+        }, 1500); // 1.5 second delay to simulate server processing
+      });
+
+      // Function to hide success message and show form again
+      function hideSuccessMessage() {
+        successMessage.style.display = 'none';
+        contactForm.style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
