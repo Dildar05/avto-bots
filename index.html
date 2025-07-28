@@ -8,6 +8,164 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU" type="text/javascript"></script>
+    <style>
+      /* Partners Section */
+      .partners-section {
+        background: #f8f9fa;
+        padding: 80px 0;
+      }
+
+      .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .partner-card {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .partner-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .partner-logo {
+        margin-bottom: 20px;
+      }
+
+      .partner-logo-img {
+        max-width: 120px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .partner-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .partner-card p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      /* Team Section */
+      .team-section {
+        padding: 80px 0;
+        background: white;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .team-card {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-photo {
+        margin-bottom: 20px;
+      }
+
+      .team-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin: 0 auto;
+      }
+
+      .team-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .team-position {
+        color: #666;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .partners-section,
+        .team-section {
+          padding: 60px 0;
+        }
+
+        .partners-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .partner-card {
+          padding: 30px 20px;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .team-card {
+          padding: 25px 20px;
+        }
+
+        .partner-logo-img {
+          max-width: 100px;
+          height: 60px;
+        }
+
+        .team-avatar {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .partner-card h3 {
+          font-size: 20px;
+        }
+
+        .partner-card p {
+          font-size: 14px;
+        }
+
+        .team-card h3 {
+          font-size: 18px;
+        }
+
+        .team-position {
+          font-size: 13px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Sticky Navigation -->
@@ -205,9 +363,9 @@
             <div class="location-info">
               <div class="location-details">
                 <h3>Филиал в Алматы</h3>
-                <p><strong>Адрес:</strong> ул. Варламова 1/3, офис 5</p>
+                <p><strong>Адрес:</strong> ул. Варламова 1/3, 103</p>
                 <p><strong>Телефон:</strong> +7(747) 750 26 07</p>
-                <p><strong>Время работы:</strong> 10:00 - 18:00 (Пн-Вс)</p>
+                <p><strong>Время работы:</strong> Пн-Пт с 11:00 - 18:00</p>
               </div>
               <div class="location-map">
                 <iframe
@@ -300,6 +458,52 @@
             <div class="price-cell">Замена клавиатуры</div>
             <div class="price-cell">Полный разбор</div>
             <div class="price-cell">от 10 000 ₸</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8.1. Partners Section -->
+    <section id="partners" class="partners-section">
+      <div class="container">
+        <h2 class="section-title">Официальные партнеры</h2>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="./images/hydra-logo.png" alt="HYDRA Logo" class="partner-logo-img" />
+            </div>
+
+            <a href="https://www.hydra-shop.kz/">Интернет магазин HYDRA Kazakhstan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8.2. Team Section -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2 class="section-title">Наши мастера</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo">
+              <div class="team-avatar">👨‍💼</div>
+            </div>
+            <h3>Бекболат Ербол</h3>
+            <p class="team-position">Руководитель сервис центра</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <div class="team-avatar">👨‍🔧</div>
+            </div>
+            <h3>Архипов Михаил</h3>
+            <p class="team-position">Сервисный инженер</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <div class="team-avatar">👨‍🔧</div>
+            </div>
+            <h3>Сакенов Ардашер</h3>
+            <p class="team-position">Сервисный инженер</p>
           </div>
         </div>
       </div>
@@ -493,21 +697,13 @@
               </div>
               <div class="contact-block">
                 <h4>Алматы</h4>
-                <p>ул. Варламова 1/3, офис 5</p>
+                <p>ул. Варламова 1/3, 103</p>
                 <p>+7(747) 750 26 07</p>
-                <p>10:00 - 18:00 (Пн-Вс)</p>
+                <p>Пн-Пт с 11:00 - 18:00</p>
               </div>
             </div>
             <div class="footer-email">
               <p>Email: avtobots-svc@mail.ru</p>
-            </div>
-          </div>
-          <div class="footer-social">
-            <h4>Мы в соцсетях</h4>
-            <div class="social-icons">
-              <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -516,7 +712,7 @@
             <p>© 2023 AvtoBots. Все права защищены.</p>
           </div>
           <div class="company-info">
-            <p>ТОО "AvtoBots" | БИН: 123456789012</p>
+            <p>ТОО "AvtoBots"</p>
           </div>
           <div class="back-to-top">
             <a href="#hero">Наверх ↑</a>
