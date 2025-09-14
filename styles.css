@@ -627,6 +627,11 @@ nav ul li a:hover {
   color: white;
 }
 
+.iiko-icon {
+  background-color: #ffb300;
+  color: white;
+}
+
 .b2b-logo-item:hover .b2b-icon {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
